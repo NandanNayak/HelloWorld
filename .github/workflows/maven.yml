@@ -27,10 +27,8 @@ jobs:
         java-version: '8.0.362+9'
         distribution: 'temurin'
         cache: maven
-    - name: Test with Maven
-      run: mvn test
-    - name: Build with Maven
-      run: mvn package
+    - name: Test and Build with Maven
+      run: mvn test package
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
 #    - name: Update dependency graph
