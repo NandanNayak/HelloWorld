@@ -10,7 +10,13 @@ pipeline {
         stage('Build') {
             steps {
                 // Run Maven on a Unix agent.
-                sh "mvn clean package"
+                sh "mvn clean package -DskipTests"
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh "mvn test"
             }
         }
     }
