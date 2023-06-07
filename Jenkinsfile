@@ -41,7 +41,7 @@ pipeline {
             when { branch "main"}
             steps {
                 script {
-                    withDockerRegistry([credentialId: "docker-creds", url: ""]) {
+                    withDockerRegistry([credentialsId: "docker-creds", url: ""]) {
                         image.push()
                     }
                 }
