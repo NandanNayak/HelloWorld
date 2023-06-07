@@ -34,6 +34,7 @@ pipeline {
         }
 
         stage("Docker Push") {
+            when { branch: "main"}
             steps {
                 withDockerRegistry([credentialId: "docker-creds", url: ""]) {
                     image.push()
