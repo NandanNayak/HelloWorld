@@ -38,7 +38,7 @@ pipeline {
         }
 
         stage("Docker Push") {
-            when { branch: "main"}
+            when { branch "main"}
             steps {
                 script {
                     withDockerRegistry([credentialId: "docker-creds", url: ""]) {
