@@ -1,5 +1,13 @@
 # HelloWorld
 
+## Table of Contents
+
+- [Introduction](#Introdcution)
+- [Maven Build and Test](#maven-build-and-test)
+- [Execute the Jar file](#execute-the-jar-file)
+- [Docker Build and Run](#docker-build-and-run)
+- [Jenkins Pipeline](#jenkins-pipeline)
+
 ## Introduction
 
 This project demonstrates the use of **Java**, **JUnit4**, **Maven**, **Docker** and **Jenkins pipeline** in a simple HelloWorld app. 
@@ -44,7 +52,7 @@ docker run hello-world:1.0
 Hello World!
 ```
 
-## Jenkins pipeline
+## Jenkins Pipeline
 
 The project also contains a `Jenkinsfile` which performs maven build and test, docker build and run and then pushes the image into the dockerhub registry.
 The docker image pushed by the Jenkins pipeline can be found [here](https://hub.docker.com/repository/docker/nanayak/hello-world/general).
