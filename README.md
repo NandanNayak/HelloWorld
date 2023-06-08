@@ -7,7 +7,7 @@ The project also makes use of github workflows to automate testing on the Pull r
 
 ## Maven Build and Test
 
-To run a Maven Build and Unit Tests, run the below commands in the root folder.
+To run a Maven Build and trigger Unit Tests, run the below commands in the project's root folder.
 
 ```bash
 # Maven build
@@ -20,6 +20,7 @@ mvn test
 ## Execute the Jar file
 
 Once the Maven build succeeds, a `HelloWorld-1.0-SNAPSHOT.jar` is generated in the `target` directory.
+To execute the jar, run the below command.
 
 ```bash
 java -jar /HelloWorld/target/HelloWorld-1.0-SNAPSHOT.jar
@@ -27,8 +28,8 @@ java -jar /HelloWorld/target/HelloWorld-1.0-SNAPSHOT.jar
 
 ## Docker Build and Run
 
-This repository also contains a `Dockerfile` which can be used to build a docker image and can be executed.
-To build the docker image, simple run the below command in the root folder of this project.
+This repository also contains a `Dockerfile` which can be used to build a docker image which can be executed.
+To build the docker image, simply run the below command in the root folder of this project.
 
 ```bash
 # Build the docker image
