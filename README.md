@@ -55,6 +55,7 @@ Hello World!
 ## Jenkins Pipeline
 
 The project also contains a `Jenkinsfile` which performs maven build and test, docker build and run and then pushes the image into the `dockerhub` registry.
+
 The docker image pushed by the Jenkins pipeline can be found [here](https://hub.docker.com/repository/docker/nanayak/hello-world/general).
 
 ![image](./images/Jenkins-pipeline.png)
